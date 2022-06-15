@@ -1,0 +1,298 @@
+/*//////////////////////////////////////////////////////// M E D I D A S/////////////////////////////////////////////////////////////////*/
+*{
+    padding: 0;
+    margin: 0.5%;
+ }
+ 
+ 
+ #header{
+    grid-area: header;
+    align-items: center;
+}
+#nav{
+    grid-area: nav;
+    background-color: #302939cc;
+        border-radius: 5px
+}
+#wnew{
+    grid-area: wnew;
+    background-color: #302939cc;
+}
+#vs{
+    grid-area: vs;
+    background-color: #302939cc;
+}
+#txt{
+    grid-area: txt;
+}
+#footer{
+    grid-area: footer;
+    background-color: aqua;
+}
+ #grilla{
+    display: grid;
+    grid-template-areas:
+    
+    "nav"
+    "txt"
+    "wnew"
+    "vs"
+    "footer";
+    grid-template-columns:100%;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    gap: 2%;
+ }
+
+/*MEDIDAD IPAD*/
+   @media(min-width:768px){
+        #grilla{
+        display: grid;
+        grid-template-areas: 
+       
+        "nav nav"
+        " txt  txt "
+        " wnew  wnew"
+        "vs    vs"
+        "footer footer";
+    
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    justify-content: space-around;
+    gap: 2%;
+    }
+
+
+/*MEDIDA DESKTOP*/
+
+@media(min-width:1012px){
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+        
+        "nav "
+        "txt"
+        " wnew"
+        "wnew"
+        "vs"
+        "footer";
+    
+        grid-template-columns: auto;
+        grid-template-rows:auto;
+        justify-content: space-around;
+        gap: 2%;
+
+    }
+}
+
+/*GRILLA HISTORIA*/
+.quees{
+    grid-area: quees;
+   
+}
+
+.cara{
+    grid-area: cara;
+}
+.contro{
+    grid-area: contro;
+}
+
+@media(min-width:768px){
+
+
+#grillahistoria{
+    display: grid;
+    grid-template-areas: 
+         "nav    nav"
+        "quees  quees"
+         "cara  contro"
+         "cara  contro "
+         "footer footer";
+    
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    justify-content: space-around;
+    gap: 2%;
+
+}}
+
+@media(min-width:1024px){
+    #grillahistoria{
+        display: grid;
+        grid-template-areas: 
+    "nav"
+    "quees"
+    "cara"
+    "contro"
+    "footer";
+
+        
+grid-template-columns:auto;
+grid-template-rows: auto;
+justify-content: space-around;
+gap: 2%;
+    }
+}
+
+/*GRILLA EXPONENTES*/
+
+.dy{
+    grid-area: dy;
+
+}
+.kg{
+    grid-area: kg;
+
+}
+.bb{
+    grid-area:bb;
+
+}
+.jb{
+    grid-area: jb;
+
+}
+.do{
+    grid-area: do;
+
+}
+.ra{
+    grid-area: ra;
+
+}
+.bg{
+    grid-area: bg;
+
+}
+.ma{
+    grid-area: ma;
+
+}
+.mt{
+    grid-area: mt;
+
+}
+.ar{
+    grid-area: ar;
+}
+@media(min-width:768px){
+    #grillaexpo{
+        display:grid;
+        grid-template-areas:
+        "nav nav"
+        "dy   kg"
+        "bb   jb"
+        "do   ra"
+        "bg   ma"
+        "mt   ar"
+        "footer footer";
+        grid-template-columns:auto;
+grid-template-rows: auto;
+justify-content: space-around;
+gap: 2%;
+    }   
+    }
+
+    @media (min-width:1024px){
+        #grillaexpo{
+            display:grid;
+            grid-template-areas:
+        "nav nav"
+        "dy   kg"
+        "bb   jb"
+        "do   ra"
+        "bg   ma"
+        "mt   ar"
+        "footer footer";
+        
+            grid-template-columns:auto;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    gap: 2%;
+        }}
+
+        /*GRILLA CONCIERTOS*/
+        .conciertos{
+            grid-area: conciertos;}
+
+  @media (min-width:1024px){
+    .grids{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;}}
+
+  
+
+  /*GRILLA BAILA*/
+
+  .bailar{
+    grid-area: bailar;}
+
+.cadera{
+    grid-area: cadera;}
+
+.pies {
+    grid-area: pies;
+}
+.arriba{
+    grid-area: arriba;
+}
+.body{
+    grid-area: body;
+}
+.actitud{
+    grid-area:actitud;
+}
+
+@media(min-width:768px){
+    #grillabaila{
+        display:grid;
+        grid-template-areas:
+        "nav      nav"
+        "bailar  cadera"
+        "pies    arriba"
+        "body    actitud"
+        "footer footer";
+        grid-template-columns:auto;
+grid-template-rows: auto;
+justify-content: space-around;
+gap: 2%;}
+    }
+
+    @media (min-width:1024px){
+        #grillabaila {
+           display: grid;
+           grid-template-areas: 
+           "nav            nav          nav"
+           "bailar       cadera         pies"
+           "arriba         body        actitud"
+           "footer footer footer";
+           grid-template-columns:auto;
+           grid-template-rows: auto;
+           justify-content: space-around;
+           gap: 2%;
+       }
+         }
+
+/*GRILLA CONTACTO*/
+.formulario{
+    grid-area: formulario;}
+.box{
+    border: 3px solid #302939cc;
+    border-radius: 5px;
+}
+@media(min-width:1024px){
+    #grillacontacto{
+        display:grid;
+        grid-template-areas:
+        "nav"
+        "formulario"
+        " formulario"
+        "footer";
+        grid-template-columns:auto;
+grid-template-rows: auto;
+justify-content: space-around;
+gap: 2%;}
+    }
+
+   }
