@@ -23,13 +23,17 @@ nav ul li {
   text-align: center;
 }
 
-.a {
+.generales_extend, .a, #wn, .btn--twitter, .btn--facebook, .btn--instagram {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: large;
   text-decoration: none;
   text-align: center;
-  font-size: large;
+  border-radius: 10px;
+}
+
+.a {
   background-color: #302939cc;
   color: #ee5695e2;
-  font-family: 'Gloria Hallelujah', cursive;
   display: inline-block;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -38,7 +42,55 @@ nav ul li {
   padding: 15px;
   border: 3px solid #ee5695e2;
   border-style: solid;
-  border-radius: 10px;
+}
+
+#wn {
+  background-color: #ee5695c8;
+  color: #302939cc;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 20px;
+  border: 3px solid #302939dc;
+}
+
+.gifindex {
+  float: right;
+  clear: both;
+  margin: 20px;
+}
+
+.gifizq {
+  float: left;
+  clear: both;
+  margin: 20px;
+}
+
+/*mapas*/
+.btn--twitter {
+  background-color: #1DA1F2;
+  padding: 10px;
+}
+
+.btn--facebook {
+  background-color: #4267B2;
+  padding: 10px;
+}
+
+.btn--instagram {
+  background-color: #E1306C;
+  padding: 10px;
+}
+
+.btn--twitter {
+  background-color: #1DA1F2;
+}
+
+.btn--facebook {
+  background-color: #4267B2;
+}
+
+.btn--instagram {
+  background-color: #E1306C;
 }
 
 .btn-outline-dark {
@@ -54,20 +106,6 @@ nav ul li {
           box-shadow: 0 0 0 0.25rem;
 }
 
-#wn {
-  background-color: #ee5695c8;
-  color: #302939cc;
-  display: inline-block;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: large;
-  text-decoration: none;
-  text-align: center;
-  margin-top: 15px;
-  padding: 20px;
-  border: 3px solid #302939dc;
-  border-radius: 10px;
-}
-
 .textoinicial {
   font-family: 'Anek Bangla', sans-serif;
   color: #f1b2cd;
@@ -76,18 +114,6 @@ nav ul li {
   border-radius: 10px;
   margin: 20px;
   padding: 30px 20px 20px 30px;
-}
-
-.gifindex {
-  float: right;
-  clear: both;
-  margin: 20px;
-}
-
-.gifizq {
-  float: left;
-  clear: both;
-  margin: 20px;
 }
 
 .delimitador {
@@ -105,9 +131,24 @@ nav ul li {
 .iframe {
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 50%;
   top: 0px;
   left: 0px;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 400px;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 img {
@@ -464,7 +505,7 @@ li:hover {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: footer;
-  background-color: aqua;
+  background-color: #302939cc;
 }
 
 #grilla {
