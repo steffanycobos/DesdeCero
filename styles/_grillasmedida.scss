@@ -1,7 +1,7 @@
 /*//////////////////////////////////////////////////////// M E D I D A S/////////////////////////////////////////////////////////////////*/
 *{
     padding: 0;
-    margin: 0.5%;
+    margin: 1%;
  }
  
  
@@ -16,18 +16,21 @@
 }
 #wnew{
     grid-area: wnew;
-    background-color: #302939cc;
+    background-color: #302939ee;
+    border-radius: 10px;
 }
 #vs{
     grid-area: vs;
-    background-color: #302939cc;
+    background-color: #302939ee;
+ border-radius: 10px;
 }
 #txt{
     grid-area: txt;
 }
 #footer{
     grid-area: footer;
-    background-color: #302939cc;
+    background-color: #302939ee;
+    border-radius: 10px;
 
 }
  #grilla{

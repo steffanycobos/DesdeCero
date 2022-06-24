@@ -8,13 +8,19 @@
         list-style-type: none;
         margin:20px;
     }
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 0.1;
+        align-items: center;
+    }
 
     .header{
         text-align: center;
+        width:100%;
     }
     .generales_extend{
         font-family: 'Gloria Hallelujah', cursive;
-        font-size: large;
+        font-size: larger;
          text-decoration: none;
          text-align:center;
         border-radius: 10px
@@ -25,10 +31,11 @@
         @extend .generales_extend;
             background-color:#302939dc ;
             color: #ee5695e2;
-            border: 10px solid #ee5695e2;
+            border: 3px #ee5695e2;
             border-style:solid;
             letter-spacing: 0.25cm;
-            padding: 20px 20px 20px 30px;}
+            padding: 20px 20px 20px 30px;
+            margin-top: 1%;}
 
     .a {
        @extend .generales_extend;
@@ -40,6 +47,7 @@
         padding: 15px;
         border: 3px solid #ee5695e2;
         border-style: solid;
+      
     }
     
     #wn{
@@ -91,7 +99,7 @@
        instagram:#E1306C,
 );
 @each $red, $color in $redesSociales {
-    .btn--#{$blue}{
+    .btn--#{$red}{
         background-color: $color;
     }
 }
@@ -130,6 +138,8 @@
 .video-responsive {
     overflow:hidden;
     padding-bottom:400px; 
+    margin-left: 25%;
+    margin-right: 25%;
     position:relative;
     height:0;
 }
@@ -156,7 +166,7 @@
         position: relative;
         justify-content: center;
         width: 100%;
-        margin:2% 55% 4% 60%;
+        margin:1% 20% 4% 20%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         transition:transform .6s ease-in-out;
