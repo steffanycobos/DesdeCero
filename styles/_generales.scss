@@ -1,206 +1,204 @@
-    
 
 
     nav ul li {
-        
+
         display: inline-block;
         align-content: center;
         list-style-type: none;
-        margin:20px;
+        margin: 20px;
     }
+
     .navbar-collapse {
         flex-basis: 100%;
         flex-grow: 0.1;
         align-items: center;
     }
 
-    .header{
-        text-align: center;
-        width:100%;
-    }
-    .generales_extend{
-        font-family: 'Gloria Hallelujah', cursive;
+    .header {
+        font-family: 'Mochiy Pop One', sans-serif;
         font-size: larger;
-         text-decoration: none;
-         text-align:center;
-        border-radius: 10px
-        
+        font-weight: bolder;
+        font-weight: 100%;
+        color: #000000;
+        background-color: #e1306bca;
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .generales_extend {
+        font-family: 'Mochiy Pop One', sans-serif;
+        font-size: larger;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 1px;
+
+    }
+
+    .social {
+        width: 400px;
+        position: static;
+        top: 50px;
+        right: 0;
+        margin-left: 5%;
+        margin-bottom: 1%;
+    }
+
+    .navbar {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        text-decoration: none;
     }
 
     h2 {
         @extend .generales_extend;
-            background-color:#302939dc ;
-            color: #ee5695e2;
-            border: 3px #ee5695e2;
-            border-style:solid;
-            letter-spacing: 0.25cm;
-            padding: 20px 20px 20px 30px;
-            margin-top: 1%;}
+        background-color: #ff165ca9;
+        color: #F6F7D7;
+        border-radius: 5px;
+        letter-spacing: 0.25cm;
+        padding: 20px 20px 20px 30px;
+        margin-top: 1%;
+    }
 
     .a {
-       @extend .generales_extend;
-        background-color: #302939cc;
-        color: #ee5695e2;
-        display:inline-block;
+        @extend .generales_extend;
+        background-color: #e1306bdf;
+        color: #F6F7D7;
+        display: inline-block;
         justify-content: space-between;
         letter-spacing: 00.1cm;
-        padding: 15px;
-        border: 3px solid #ee5695e2;
-        border-style: solid;
-      
+        padding: 20px;
+        border-radius: 10px;
+
     }
-    
-    #wn{
-    @extend .generales_extend;
-        background-color:#ee5695c8 ;
-        color:#302939cc ;
+
+    #wn {
+        @extend .generales_extend;
+        background-color: #0e1062ad;
+        color: #F6F7D7;
         display: inline-block;
-        margin-top: 15px;;
-        padding: 20px ;
-        border: 3px solid #302939dc;
-      
+        margin-top: 15px;
+        ;
+        padding: 20px;
     }
 
-@mixin gifs ($float, $clear, $margin){
-    float: $float;
-    clear: $clear;
-    margin: $margin;
-}
-
-.gifindex{
-@include gifs(right, both, 20px)
-}
-.gifizq{
-  @include gifs (left, both, 20px)
-}
-    
-.btn--twitter {
-    @extend .generales_extend;
-    background-color: #1DA1F2;
-    padding: 10px ;
-  }
-  
-  .btn--facebook {
-    @extend .generales_extend;
-    background-color: #4267B2;
-    padding: 10px ;
-  }
-  
-  .btn--instagram {
-    @extend .generales_extend;
-
-    background-color: #E1306C;
-    padding: 10px ;
-  }
-
-  $redesSociales: ( 
-       twitter: #1DA1F2, 
-       facebook:#4267B2,
-       instagram:#E1306C,
-);
-@each $red, $color in $redesSociales {
-    .btn--#{$red}{
-        background-color: $color;
+    @mixin gifs ($float, $clear, $margin-top, $margin-right, $margin-bottom, $margin-left) {
+        float: $float;
+        clear: $clear;
+        margin-top: $margin-top;
+        margin-right: $margin-right;
+        margin-bottom: $margin-bottom;
+        margin-left: $margin-left;
     }
-}
 
-    
-.btn-outline-dark {
-    color: #000000c8;
-    background-color:#ee5695c8;
-    border-color: #212529;
-}
+    .gifindex {
+        @include gifs(right, both, 40px, 30px, 20px, 20px)
+    }
 
-.navbar-toggler {
-    text-decoration: none;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem;
-}
-    
-       
-        .textoinicial {
-    
-            font-family: 'Anek Bangla', sans-serif;
-            color: #f1b2cd;
-            text-align: justify;
-            background-color: #302939ee;
-            border-radius: 10px;
-            margin: 20px;
-            padding: 30px 20px 20px 30px;}
-    
- 
-    .delimitador{
-        width:560px;
-        margin:auto;
-        }
-    
-        
-.video-responsive {
-    overflow:hidden;
-    padding-bottom:400px; 
-    margin-left: 25%;
-    margin-right: 25%;
-    position:relative;
-    height:0;
-}
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
+    .gifizq {
+        @include gifs (left, both, 40px, 20px, 10px, 40px)
+    }
 
-        img {
-            height: auto;
-            max-width: 100%;
-            }
-    
-    
-     .back{
-         background-color: #302939cc;
-     }
-     
-     .carousel-item {
-        display:none;
+
+    .btn-outline-dark {
+        color: #000000c8;
+        background-color: #E1306C;
+        border-color: #212529;
+    }
+
+    .navbar-toggler {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem;
+    }
+
+    .textoinicial {
+
+        font-family: 'Anek Bangla', sans-serif;
+        color: #F6F7D7;
+        text-align: justify;
+        background-color: #302939ee;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 30px 20px 90px 30px;
+    }
+
+
+
+    .video-responsive {
+        padding-bottom: 400px;
+        margin-left: 2%;
+        margin-right: 2%;
+        position: relative;
+        height: 0;
+    }
+
+    .video-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+
+
+    .carousel-item {
+        display: none;
         position: relative;
         justify-content: center;
         width: 100%;
-        margin:1% 20% 4% 20%;
+        margin: 10% 20% 6% 23%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        transition:transform .6s ease-in-out;
-       }
-        
-        
- /*BACKGROUND*/
+        transition: transform .6s ease-in-out;
+    }
 
- .body1 {
-    background-image: url("https://preview.redd.it/chpne07xcm561.jpg?width=960&crop=smart&auto=webp&s=c2f2ea28135d9c91dbb5c605fcbd222aef3e8e21");
-    background-size: cover;
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    /*BACKGROUND*/
+
+    .body1 {
+        background-image: url("https://preview.redd.it/chpne07xcm561.jpg?width=960&crop=smart&auto=webp&s=c2f2ea28135d9c91dbb5c605fcbd222aef3e8e21");
+        background-size: cover;
 
 
-}
+    }
 
-.body2 {
-    background-image: url("https://preview.redd.it/ne8oqdotffb61.jpg?width=960&crop=smart&auto=webp&s=220ff3e815d6ed62945435b637c98f74a4f91c1f");
-    background-size: cover;
-}
+    .body2 {
+        background-image: url("https://preview.redd.it/ne8oqdotffb61.jpg?width=960&crop=smart&auto=webp&s=220ff3e815d6ed62945435b637c98f74a4f91c1f");
+        background-size: cover;
+    }
 
-.body3{
-    background-image: url("https://preview.redd.it/pyc8x52rukc61.jpg?width=960&crop=smart&auto=webp&s=eb95bb304d3736ef8603ef0cf1f2fcfc280818ce");
-    background-size: auto;
-}
+    .body3 {
+        background-image: url("https://preview.redd.it/pyc8x52rukc61.jpg?width=960&crop=smart&auto=webp&s=eb95bb304d3736ef8603ef0cf1f2fcfc280818ce");
+        background-size: auto;
+    }
 
-.body4{
-background-image: url("https://i.redd.it/6tyi4v5xg7b61.jpg");
-background-size: cover;
-}
-.body5{
+    .body4 {
+        background-image: url("https://i.redd.it/6tyi4v5xg7b61.jpg");
+        background-size: cover;
+    }
 
-background-image: url("https://i.redd.it/4ggz7tb5aqh61.jpg");
-background-size:cover;
-}
+    .body5 {
 
-.body6{background-image: url("https://i.redd.it/1tez8shazvi61.jpg");
-background-size: cover;}
+        background-image: url("https://i.redd.it/4ggz7tb5aqh61.jpg");
+        background-size: cover;
+    }
+
+    .body6 {
+        background-image: url("https://i.redd.it/1tez8shazvi61.jpg");
+        background-size: cover;
+    }
